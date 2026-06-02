@@ -1,14 +1,23 @@
-# CLI 工具现代化升级项目
+# 🔧 CLI 工具现代化升级项目
 
-> **日期**: 2026-05-29  
-> **状态**: P0 工具全部完成 | 使用场景分析完成  
-> **作者**: 合肥工业大学学生 | BuddyOS 项目创始人
+<p align="center">
+  <img src="https://img.shields.io/badge/CLI%20Tools-Modernization-blue?logo=gnu-bash" alt="CLI Tools">
+  <img src="https://img.shields.io/badge/Status-P0%20Done-brightgreen" alt="Status">
+  <img src="https://img.shields.io/github/license/smiling66652/cli-object?color=blue" alt="License">
+</p>
+
+<p align="center">
+  <strong>对本地所有 CLI 工具进行全量扫描、现代替代、去重整合</strong><br>
+  基于全网调研，找到最快、最好用的现代 CLI 工具
+</p>
 
 ---
 
 ## 🎯 项目起源
 
 在日常开发中，大量使用 `find`、`grep`、`pip install`、`node` 等 CLI 工具，体验老旧、速度慢、功能有限。决定对本地所有 CLI 工具进行一次**全量扫描**，然后基于全网调研，找到现代替代方案，完成升级。
+
+---
 
 ## 📦 项目内容
 
@@ -22,7 +31,9 @@
 | 6. 使用场景 | 全网搜索典型工作流 + 个性化分析 | ✅ 完成 |
 | 7. 文档交付 | 扫描报告、调研报告、场景分析、升级总结 | ✅ 完成 |
 
-## 🔧 已安装的 P0 工具
+---
+
+## ✨ 已安装的 P0 工具
 
 | 工具 | 功能 | 版本 | 替代谁 | 提升 |
 |------|------|------|--------|------|
@@ -34,15 +45,7 @@
 
 > Fish Shell 4.0.x 暂未安装（GitHub Releases 无 Windows 原生二进制），NuShell 作为现代 Shell 主力替代。
 
-## 📁 项目文件
-
-| 文件 | 说明 |
-|------|------|
-| `cli_tools.csv` | 全量扫描结果（CSV） |
-| `CLI工具完整报告.md` | 扫描详细报告（102 个工具） |
-| `现代CLI工具全量调研报告.md` | 全网调研报告（含方案对比） |
-| `CLI工具使用场景与工作流大全.md` | 经典工作流 + 用户个性化场景 |
-| `CLI工具现代化升级报告.md` | 项目总结报告（完整版） |
+---
 
 ## 🚀 快速开始
 
@@ -74,7 +77,7 @@ uv --version      # uv v0.11.17
 ```bash
 # 替代 find
 fd -e py                    # 找所有 Python 文件
-fd --changed-within 1d      # 今天修改的文件
+fd --changed-within 1d       # 今天修改的文件
 
 # 替代 grep
 rg "关键词"                   # 递归搜索
@@ -89,18 +92,19 @@ uv pip install numpy         # 比 pip 快 10-100x
 uv venv                      # 创建虚拟环境
 ```
 
-## 🔗 发布命令
+---
 
-### 推送到 GitHub（需要先认证）
+## 📁 项目文件
 
-```bash
-gh auth login
-gh repo create cli-tools-modernization --public --source=. --push
-```
+| 文件 | 说明 |
+|------|------|
+| `cli_tools.csv` | 全量扫描结果（CSV） |
+| `CLI工具完整报告.md` | 扫描详细报告（102 个工具） |
+| `现代CLI工具全量调研报告.md` | 全网调研报告（含方案对比） |
+| `CLI工具使用场景与工作流大全.md` | 经典工作流 + 用户个性化场景 |
+| `CLI工具现代化升级报告.md` | 项目总结报告（完整版） |
 
-### 安装为 WorkBuddy Skill
-
-已在 `~/.workbuddy/skills/cli-tools-modernization/` 就绪，WorkBuddy 会自动发现并加载。
+---
 
 ## ⚠️ 踩坑记录
 
@@ -112,6 +116,14 @@ gh repo create cli-tools-modernization --public --source=. --push
 | PowerShell 安全策略阻止 `iex` | 绕过，改用 WinGet 安装 |
 | sandbox 文件访问被拒 | 将文件移到 workspace 目录 |
 
-## 📜 许可证
+---
+
+## 📄 License
 
 MIT License
+
+---
+
+<div align="center">
+  <sub>合肥工业大学学生 | BuddyOS 项目创始人</sub>
+</div>
